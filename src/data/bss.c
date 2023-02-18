@@ -146,7 +146,9 @@ DG_TEX BSS gMenuTextureRec_800B58B0; // 0xC (12) bytes
 
 gap gap_800B58BC[0x4]; // 4 bytes
 
-unsigned short BSS gSystemCallbackProcs_800B58C0[5]; // 0xC (12) bytes - padded
+unsigned short BSS gSystemCallbackProcs_800B58C0[5]; // 0xA (10) bytes
+
+// C compiler will align next variable to 4 bytes (adding 2 bytes)
 
 gap gap_800B58CC[0x14]; // 20 bytes
 
@@ -215,13 +217,13 @@ radio_table BSS gRadioBaseTable_800BDAB8; // 0x40 (64) bytes
 radio_table BSS gRadioOverTable_800BDAF8; // 0x40 (64) bytes
 RadioMemory BSS gRadioMemory_800BDB38[RADIO_MEMORY_COUNT]; // 0x140 (320) bytes
 unsigned char BSS gBulNames_800BDC78[64]; // 0x40 (64) bytes
+short BSS snake_mag_size_800BDCB8; // 0x2 (2) bytes
+short BSS snake_weapon_idx_800BDCBA; // 0x2 (2) bytes
+short BSS snake_weapon_max_ammo_800BDCBC; // 0x2 (2) bytes
+short BSS unk_800BDCBE; // 0x2 (2) bytes
+short BSS word_800BDCC0; // 0x2 (2) bytes
 
-short BSS snake_mag_size_800BDCB8;
-short BSS snake_weapon_idx_800BDCBA;
-short BSS snake_weapon_max_ammo_800BDCBC;
-short BSS unk_800BDCBE;
-
-short BSS word_800BDCC0; // 0x4 (4) bytes - padded
+// C compiler will align next variable to 4 bytes (adding 2 bytes)
 
 gap gap_800BDCC4[0x4]; // 4 bytes
 

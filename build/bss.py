@@ -150,9 +150,17 @@ def main():
         assert name in sizes, name
         size = sizes[name]
 
-        padding = size % 4
+        required_alignment = 4
+        if line.startswith("short"):
+            required_alignment = 2
+
+        padding = off % required_alignment
         if padding:
-            size += 4 - padding
+            output_lines.append('\n')
+            output_lines.append('// C compiler will align next variable to {} bytes (adding {} bytes)'.format(required_alignment,  required_alignment - padding))
+            output_lines.append('\n')
+            off += required_alignment - padding
+            last_addr += required_alignment - padding
 
         if last_addr is not None:
             gap = addr - last_addr - last_size
@@ -168,8 +176,7 @@ def main():
                 print('.. or {} is actually a part of {}'.format(name, last_name), file=sys.stderr)
                 sys.exit(2)
 
-        extra = ' - padded' if padding > 0 else ''
-        output_lines.append(f'{line}; // 0x{size:X} ({size}) bytes{extra}\n')
+        output_lines.append(f'{line}; // 0x{size:X} ({size}) bytes\n')
 
         # TODO: emit trailing gap to BSS_END
 
