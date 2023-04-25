@@ -38,7 +38,7 @@ typedef struct _OBJECT
     short           field_10;    // 0x10 no match with unsigned in sna_8004E260
     unsigned short  field_12;    // 0x12
     MOTION_CONTROL *m_ctrl;      // 0x14
-    unsigned short  field_18;    // 0x18
+    short           field_18;    // 0x18
     short           field_1A;    // 0x1A must be signed for sna_anim_box_stop_800554B4 to match
     short           field_1C;    // 0x1C
     unsigned short  field_1E;    // 0x1C
