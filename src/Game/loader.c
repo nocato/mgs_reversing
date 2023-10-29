@@ -54,7 +54,7 @@ struct Loader *Loader_Init_8002E460(const char *pStageName)
     // Thankfully it doesn't contain an overlay!
     if (strcmp(pStageName, "init") != 0)
     {
-        pStageName = "s16b";
+        pStageName = "s00a";
     }
 
     pLoader = (struct Loader *)GV_NewActor_800150E4(2, sizeof(struct Loader));

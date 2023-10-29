@@ -6,35 +6,62 @@ extern const char aRation_800DFE94[];
 extern const char aSocombullet_800DFE80[];
 extern const char aFamasbullet_800DFE6C[];
 
+void s00a_ripples_800D872C();
+void NewPad_800C37EC();
+void vibrate_init_8005D508();
+void NewBreath_800C3A1C();
+void NewEnvSnd_800DF424();
+void NewCameraShake_800DF6AC();
+void NewZoom_800DFA88();
+void NewCinemaScreenSet_800DE4D8();
+void NewPadDemo_800DCFD4();
+void NewDymcSeg_800C4BCC();
+void NewAsioto_800C3E08();
+void NewAsiatoKun_800D1A70();
+void NewWall_800C3718();
+void NewShakemdl_800C54E8();
+void NewCommand_800D0908();
+void NewWaterArea_800DACCC();
+void NewSnakeWatcher_800C5034();
+void s00a_smoke_800D2BEC();
+void NewEmitter_800C3E50();
+void NewElevator_800D9F30();
+void s00a_mouse_800D5234();
+void s00a_rsurface_800D8244();
+void telop_800DDB34();
+void NewBubbleS_800D5D9C();
+void s00a_o2_damge_800DE9C8();
+void NewFadeIo_800C42BC();
+
 GCL_ActorTableEntry s00aOverlayCharas[] =
 {
-    { 0x63AA, (TGCL_ActorCreateFn)0x800D872C },
-    { 0xCBF8, (TGCL_ActorCreateFn)0x800C37EC },
-    { 0xFED1, (TGCL_ActorCreateFn)0x8005D508 },
-    { 0x4170, (TGCL_ActorCreateFn)0x800C3A1C },
-    { 0x3F9A, (TGCL_ActorCreateFn)0x800DF424 },
-    { 0x7BC2, (TGCL_ActorCreateFn)0x800DF6AC },
-    { 0x51C6, (TGCL_ActorCreateFn)0x800DFA88 },
-    { 0x7A05, (TGCL_ActorCreateFn)0x800DE4D8 },
-    { 0x3ED7, (TGCL_ActorCreateFn)0x800DCFD4 },
-    { 0xB103, (TGCL_ActorCreateFn)0x800DEBEC },
-    { 0x92BC, (TGCL_ActorCreateFn)0x800D3808 },
-    { 0x02C4, (TGCL_ActorCreateFn)0x800D1A70 },
-    { 0xEC77, (TGCL_ActorCreateFn)0x800D3118 },
-    { 0xBA52, (TGCL_ActorCreateFn)0x800DEEE0 },
-    { 0x30CE, (TGCL_ActorCreateFn)0x800D7A2C },
-    { 0xC6D7, (TGCL_ActorCreateFn)0x800D0908 },
-    { 0xDBA3, (TGCL_ActorCreateFn)0x800DACCC },
-    { 0x6E9A, (TGCL_ActorCreateFn)0x800C5034 },
-    { 0x170C, (TGCL_ActorCreateFn)0x800D2BEC },
-    { 0x32E5, (TGCL_ActorCreateFn)0x800C3E50 },
-    { 0x2ABC, (TGCL_ActorCreateFn)0x800D9F30 },
-    { 0xD4A5, (TGCL_ActorCreateFn)0x800D5234 },
-    { 0x81EA, (TGCL_ActorCreateFn)0x800D8244 },
-    { 0x7FF7, (TGCL_ActorCreateFn)0x800DDB34 },
-    { 0x1A02, (TGCL_ActorCreateFn)0x800D5D9C },
-    { 0x5D64, (TGCL_ActorCreateFn)0x800DE9C8 },
-    { 0xA12E, (TGCL_ActorCreateFn)0x800DD4A8 },
+    { 0x63AA, (TGCL_ActorCreateFn)s00a_ripples_800D872C },
+    { 0xCBF8, (TGCL_ActorCreateFn)NewPad_800C37EC },
+    { 0xFED1, (TGCL_ActorCreateFn)vibrate_init_8005D508 },
+    { 0x4170, (TGCL_ActorCreateFn)NewBreath_800C3A1C },
+    { 0x3F9A, (TGCL_ActorCreateFn)NewEnvSnd_800DF424 },
+    { 0x7BC2, (TGCL_ActorCreateFn)NewCameraShake_800DF6AC },
+    { 0x51C6, (TGCL_ActorCreateFn)NewZoom_800DFA88 },
+    { 0x7A05, (TGCL_ActorCreateFn)NewCinemaScreenSet_800DE4D8 },
+    { 0x3ED7, (TGCL_ActorCreateFn)NewPadDemo_800DCFD4 },
+    { 0xB103, (TGCL_ActorCreateFn)NewDymcSeg_800C4BCC },
+    { 0x92BC, (TGCL_ActorCreateFn)NewAsioto_800C3E08 },
+    { 0x02C4, (TGCL_ActorCreateFn)NewAsiatoKun_800D1A70 },
+    { 0xEC77, (TGCL_ActorCreateFn)NewWall_800C3718 },
+    { 0xBA52, (TGCL_ActorCreateFn)NewShakemdl_800C54E8 },
+    // { 0x30CE, (TGCL_ActorCreateFn)s00a_pato_lmp_800D7A2C },
+    { 0xC6D7, (TGCL_ActorCreateFn)NewCommand_800D0908 },
+    { 0xDBA3, (TGCL_ActorCreateFn)NewWaterArea_800DACCC },
+    { 0x6E9A, (TGCL_ActorCreateFn)NewSnakeWatcher_800C5034 },
+    { 0x170C, (TGCL_ActorCreateFn)s00a_smoke_800D2BEC },
+    { 0x32E5, (TGCL_ActorCreateFn)NewEmitter_800C3E50 },
+    { 0x2ABC, (TGCL_ActorCreateFn)NewElevator_800D9F30 },
+    { 0xD4A5, (TGCL_ActorCreateFn)s00a_mouse_800D5234 },
+    { 0x81EA, (TGCL_ActorCreateFn)s00a_rsurface_800D8244 },
+    { 0x7FF7, (TGCL_ActorCreateFn)telop_800DDB34 },
+    { 0x1A02, (TGCL_ActorCreateFn)NewBubbleS_800D5D9C },
+    { 0x5D64, (TGCL_ActorCreateFn)s00a_o2_damge_800DE9C8 },
+    { 0xA12E, (TGCL_ActorCreateFn)NewFadeIo_800C42BC },
     { 0, 0 }
 };
 
@@ -70,7 +97,12 @@ const char *s00a_off_800C33F4 = aRation_800DFE94;
 const char *s00a_off_800C33F8 = aSocombullet_800DFE80;
 const char *s00a_off_800C33FC = aFamasbullet_800DFE6C;
 
-int PutFuncList_800C3400[4] = { 0x800C9414, 0x800C94B8, 0x800C9600, 0x800C963C };
+void s00a_command_800C9414();
+void ENE_PutBreath_800C94B8();
+void ENE_PutLSight_800C9600();
+void ENE_PutBulletEx_800C963C();
+
+int PutFuncList_800C3400[4] = { s00a_command_800C9414, ENE_PutBreath_800C94B8, ENE_PutLSight_800C9600, ENE_PutBulletEx_800C963C };
 
 SVECTOR s00a_dword_800C3410 = { 5, -500, 80 };
 

@@ -9,14 +9,14 @@
 extern unsigned char *gOverlayBase_800AB9C8;
 unsigned char        *SECTION(".sbss") gOverlayBase_800AB9C8;
 
-extern GCL_ActorTableEntry s16bOverlayCharas[];
+extern GCL_ActorTableEntry s00aOverlayCharas[];
 
 extern GCL_Vars           gGcl_vars_800B3CC8;
 extern GCL_ActorTableEntry MainCharacterEntries_8009D2DC[];
 
 void GM_InitChara_8002A890()
 {
-    gOverlayBase_800AB9C8 = (unsigned char*)s16bOverlayCharas;
+    gOverlayBase_800AB9C8 = (unsigned char*)s00aOverlayCharas;
 }
 
 void GM_ResetChara_8002A8B0(void)
