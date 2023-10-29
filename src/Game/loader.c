@@ -50,6 +50,13 @@ struct Loader *Loader_Init_8002E460(const char *pStageName)
 {
     struct Loader *pLoader;
 
+    // Loading "init" stage is required, it cannot be skipped
+    // Thankfully it doesn't contain an overlay!
+    if (strcmp(pStageName, "init") != 0)
+    {
+        pStageName = "s16b";
+    }
+
     pLoader = (struct Loader *)GV_NewActor_800150E4(2, sizeof(struct Loader));
     printf("LoadReq\n");
     pLoader->field_20_pStageFile = FS_LoadStageRequest_800236E0(pStageName);

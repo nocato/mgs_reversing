@@ -339,16 +339,6 @@ def gen_build_target(targetName):
 
     OVERLAYS = [
         None, # Main executable
-        "sound",
-        "select1", "select2", "select3", "select4", "selectd",
-        "change",
-        "s16b",
-        "camera",
-        "select",
-        "d11c",
-        "s00a",
-        "d03a",
-        "s03e", "s03er",
     ]
 
     if args.variant == 'vr_exe':

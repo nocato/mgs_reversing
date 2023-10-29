@@ -1473,9 +1473,6 @@ int fprintf ( )
 }
 
 // int printf(const char *format, ...);
-int printf( )
-{
-}
 
 // int mts_null_printf_8008BBA8(const char *format, ...);
 int mts_null_printf_8008BBA8( )

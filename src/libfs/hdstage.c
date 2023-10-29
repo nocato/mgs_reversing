@@ -46,7 +46,7 @@ int sub_80022E50( STAGE_CONFIG *config, CDBIOS_TASK *task )
         {
 
         case 'b':
-            task->field_8_buffer = gOverlayBase_800AB9C8;
+            task->field_8_buffer = NULL;
             break;
 
         case 'w':

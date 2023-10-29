@@ -678,13 +678,6 @@ void GM_GameOver_8002B6C8(void)
 //Guessed function name
 int GM_LoadInitBin_8002B710(unsigned char *pFileData, int fileNameHashed)
 {
-    if ((gOverlayBase_800AB9C8 + gOverlayBinSize_800B5290) > GV_ResidentMemoryBottom_800AB940)
-    {
-        printf("TOO LARGE STAGE BINARY!!\n");
-    }
-
-    memcpy(gOverlayBase_800AB9C8, pFileData, gOverlayBinSize_800B5290);
-
     return 1;
 }
 
